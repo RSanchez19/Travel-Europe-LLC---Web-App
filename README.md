@@ -26,7 +26,7 @@ Finalmente, se creó la tag y se hizo push a un repositorio privado de Google de
 Para exponer la página, usamos dos opciones:
 
 #### 1: Google Compute Engine (GCE) + Load Balancer
-Se desplegó el contenedor en una **MIG de GCE, que se compone de 3 VM’s siguiendo un template para la creación de cada una de estas.  
+Se desplegó el contenedor en una MIG de GCE, que se compone de 3 VM’s siguiendo un template para la creación de cada una de estas.  
 
 Luego configuró un Load Balancer HTTP Global (Capa 7) conectado a un grupo de instancias administrado, se crearon las reglas de firewall para que el acceso a las VM’s sea limitado permitiendo unicamente los chequeos de salud de Google 130.211.0.0/22, 35.191.0.0/16 y que a pesar de tener IP Externa estas no son accesibles.
 
