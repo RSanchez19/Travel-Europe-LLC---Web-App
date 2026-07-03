@@ -41,6 +41,11 @@ Endpoint Externo (GKE): Se asignó una IP pública 34.63.166.5:80 con un target 
 
 Y se configuró una regla de firewall en la red personalizada para permitir el tráfico de ingreso externo 0.0.0.0/0 hacia el puerto 80 del clúster.
 
+### 3: Cloud Run
+
+Para poder acceder a la página web desde el servicio de Cloud Run, se necesita deployar un contenedor ya existente. En este caso desde el repositorio ya creado de Artifact Registry. Se seleccionó la imagen del container y al igual que en los otros servicios se necesita configurar el puerto 5000 para poder acceder de manera externa. Para poder acceder ocupamos la siguiente URL: https://travel-europe-py-730535479509.us-central1.run.app
+
+
 ---
 
 ## Utilidades
